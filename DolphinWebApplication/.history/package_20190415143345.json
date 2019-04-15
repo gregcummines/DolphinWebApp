@@ -1,6 +1,6 @@
 {
   "name": "dolphin",
-  "version": "1.0.0",
+  "version": "7.0.0",
   "license": "MIT",
   "scripts": {
     "start": "ng serve --configuration=en --open",
