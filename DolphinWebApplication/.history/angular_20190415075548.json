@@ -50,7 +50,7 @@
               "src/assets/css/reset.css",
               "src/assets/css/loading.css",
               "src/app/styles/global.scss",
-              "node_modules/font-awesome/css/font-awesome.css"
+              "../node_modules/font-awesome/css/font-awesome.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

@@ -12,8 +12,17 @@ const config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
     provider: new GoogleLoginProvider('Google-OAuth-Client-Id')
+  },
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider('Facebook-App-Id')
+  },
+  {
+    id: LinkedInLoginProvider.PROVIDER_ID,
+    provider: new LinkedInLoginProvider('LinkedIn-client-Id', false, 'en_US')
   }
 ]);
+ 
 export function provideConfig() {
   return config;
 }
@@ -36,17 +45,12 @@ const routes: Routes = [
       anchorScrolling: 'enabled'
     }),
     SocialLoginModule,
+    AuthGuard
   ],
   exports: [
     RouterModule
-  ],
-  providers: [
-    AuthGuard,
-    {
-      provide: AuthServiceConfig,
-      useFactory: provideConfig
-    }
   ]
 })
+
 export class AppRoutingModule {
 }

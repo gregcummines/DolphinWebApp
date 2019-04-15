@@ -53,7 +53,7 @@ describe('AppComponent', () => {
   }));
 
   it('should change title meta tag in root path', (() => {
-    expect(titleService.getTitle()).toBe('Dolphin');
+    expect(titleService.getTitle()).toBe('App title');
   }));
 
   it('should check browser features', (() => {

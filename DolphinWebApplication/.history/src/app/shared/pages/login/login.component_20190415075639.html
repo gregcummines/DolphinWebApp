@@ -2,9 +2,11 @@
 <!-- <div class="container" *ngIf="!hero">
   <app-hero-loading></app-hero-loading>
 </div> -->
-<div class="container">
-    <button mat-raised-button type="button" (click)="signInWithGoogle()"><span class="fa fa-google"></span></button>
-    <button mat-raised-button type="button" (click)="signInWithFB()"><span class="fa fa-facebook"></span></button>
+<div class="container" [@fadeIn]="fadeIn">
+    <ng-container>
+        <button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()"><span class="fa fa-google"></span></button>
+        <button class="btn btn-social-icon btn-facebook" (click)="signInWithFB()"><span class="fa fa-facebook"></span></button>
+    </ng-container>
 </div>
 
 

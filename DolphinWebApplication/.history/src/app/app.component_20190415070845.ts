@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.title.setTitle(this.i18n({value: 'Dolphin', id: '@@appTitle'}));
+    this.title.setTitle(this.i18n({value: 'App title', id: '@@appTitle'}));
 
     this.onEvents();
     this.checkBrowser();
